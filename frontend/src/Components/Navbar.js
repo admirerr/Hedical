@@ -9,43 +9,46 @@ import logoD from '../images/logoD.png';
 
 function NavbarComponent() {
     return (
-        <Navbar expand="lg" className="bg-body-tertiary" style={{ backgroundColor: '#17A589' }}>
+        <Navbar expand="lg"  style={{ backgroundColor: '#17A589' }}>
             <Container fluid>
-                <Navbar.Brand href="#">Hedical</Navbar.Brand>
-                <Navbar.Toggle aria-controls="navbarScroll" />
-                {/* <Link to="/" className="navbar-brand">
-                  
-        <img
+            <img
             src={logoD}
             width="50"
             height="50"
             className="d-inline-block align-top mt-1 mr-2"
-            style={{marginLeft:"-20px"}}
+            style={{marginLeft:"10px"}}
             alt=""
           />
+                <Navbar.Brand href="#">Hedical</Navbar.Brand>
+                <Navbar.Toggle aria-controls="navbarScroll" />
+                {/* <Link to="/" className="navbar-brand">
+                  
+      
           Hedical
         </Link> */}
-                <Navbar.Collapse id="navbarScroll">
+                <Navbar.Collapse id="navbarScroll" >
                     <Nav
-                        className="me-auto my-2 my-lg-0"
+                         className="me-auto my-2 my-lg-0 ms-auto"
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Nav.Link href="#action1">Home</Nav.Link>
-                        <Nav.Link href="#action2">Our Services</Nav.Link>
-                        <Nav.Link href="#action1">Ambulances</Nav.Link>
-                        <Nav.Link href="#action1">Hospitals</Nav.Link>
-                        <Nav.Link href="#action1">Join Us</Nav.Link>
-                        <Nav.Link href="#action1">Blogs</Nav.Link>
-                        <Nav.Link href="#action1">About Us</Nav.Link>
-                        <Nav.Link href="#action1">Contact Us</Nav.Link>
-                        <Nav.Link href="#action1">Enquiry Us</Nav.Link>
-                        <Nav.Link href="#action1">Pathology</Nav.Link>
+                        <Nav.Link href="#action1" style={{color:'white'}}>Home</Nav.Link>
+                        <Nav.Link href="#action2" style={{color:'white'}}>Our Services</Nav.Link>
+                        <Nav.Link href="#action1" style={{color:'white'}}>Ambulances</Nav.Link>
+                        <Nav.Link href="#action1" style={{color:'white'}}>Hospitals</Nav.Link>
+                        <Nav.Link href="#action1" style={{color:'white'}}>Join Us</Nav.Link>
+                        <Nav.Link href="#action1" style={{color:'white'}}>Blogs</Nav.Link>
+                        <Nav.Link href="#action1" style={{color:'white'}}>About Us</Nav.Link>
+                        <Nav.Link href="#action1" style={{color:'white'}}>Contact Us</Nav.Link>
+                        <Nav.Link href="#action1" style={{color:'white'}}>Enquiry Us</Nav.Link>
+                        <Nav.Link href="#action1" style={{color:'white'}}>Pathology</Nav.Link>
+                       
                     </Nav>
                     <Form className="d-flex">
                     
-                        <Button variant="outline-success" >Login</Button>
-                    </Form>
+                    <Button variant="outline-success" style={{ backgroundColor: '#ffffff', color:'#17A589'}}>Login</Button>
+                </Form>
+                    
                 </Navbar.Collapse>
             </Container>
         </Navbar>
