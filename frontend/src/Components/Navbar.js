@@ -39,13 +39,11 @@ function NavbarComponent() {
                         {/* <Nav.Link href="#action1" style={{color:'white'}}>Blogs</Nav.Link> */}
                         <Nav.Link href="#action1" style={{color:'white'}}>About Us</Nav.Link>
                         <Nav.Link href="#action1" style={{color:'white'}}>Contact Us</Nav.Link>
-                        {/* <Nav.Link href="#action1" style={{color:'white'}}>Enquiry Us</Nav.Link>
-                        <Nav.Link href="#action1" style={{color:'white'}}>Pathology</Nav.Link> */}
-                       
+
                     </Nav>
                     <Form className="d-flex">
                     
-                    <Button variant="outline-success" style={{ backgroundColor: '#ffffff', color:'#17A589'}}>Login</Button>
+                    <Button variant="outline-success" style={{ backgroundColor: '#33acdd', color:'#FFFFFF'}}>Login</Button>
                 </Form>
                     
                 </Navbar.Collapse>
