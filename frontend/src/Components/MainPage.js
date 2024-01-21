@@ -5,6 +5,7 @@ import NavbarComponent from "./Navbar";
 import { faDotCircle } from "@fortawesome/free-regular-svg-icons"; // Use the appropriate icon from Font Awesome
 import { call } from "./icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Stations from "./Station";
 const MainPage = () => {
   return (
     <div>
@@ -68,6 +69,7 @@ const MainPage = () => {
           </div>
         </div>
       </div>
+      
     </div>
   );
 };
