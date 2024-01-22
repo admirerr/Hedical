@@ -39,3 +39,9 @@
 .buttonAmb{
   background-color: '#17A589';
 } */
+/* Your custom CSS */
+/* Increase specificity to override Bootstrap styles */
+.navbar-light.navbar-custom .navbar-toggler-icon {
+   /* Replace with your desired image URL */
+}
+
