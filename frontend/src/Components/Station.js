@@ -91,7 +91,7 @@ export default function Station() {
   <div class="card-group">
     <div class="card mx-2" style={{ border: "none" }}>
       <img
-        class="card-img-top rounded-circle"
+        class="card-img-top  rounded-circle"
         src={Philosophy}
         alt="Card image cap"
       />
