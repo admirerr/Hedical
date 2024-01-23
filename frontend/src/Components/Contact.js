@@ -9,11 +9,12 @@ const Contact = () => {
         <div className="bg-gray-200 p-4 flex flex-col sm:flex-row items-center justify-between">
           
             <div className="max-w-lg mb-4 sm:mb-0">
-                <h1 className="text-3xl font-bold mb-4 ml-40">Download the Food on Track app!</h1>
-                <p className="text-xl mb-4 ml-40">For order status updates & more</p>
-                <p className="text-xl mb-4 ml-40">With handy features like timely order status updates, one-tap calling & PNR auto-pasting, lesser data usage, faster load times & fluid animations, the app is crafted to delight you with a great eCatering order experience.</p>
+                <h1 className="text-3xl font-bold mb-4 ml-40">Download the RailHealth app!</h1>
+                <p className="text-xl mb-4 ml-40">For booking status updates & more</p>
+                <p className="text-xl mb-4 ml-40">With handy features like timely medicine services, lesser data usage, online Doctor consultancy in just one tap, faster load times & fluid animations, the app is crafted to delight you with a great and healthy travelling experience.</p>
 
                 <div className="flex items-center">
+                <a href="https://apps.apple.com/in/app/irctc-catering-food-on-track/id1077183717"> 
                     <img
                         src={appstore}
                         width="150"
@@ -21,6 +22,8 @@ const Contact = () => {
                         className="inline-block align-top mt-1 mr-2 ml-40"
                         alt="App Store"
                     />
+                    </a>
+                    <a href="https://apps.apple.com/in/app/irctc-catering-food-on-track/id1077183717">
                     <img
                         src={playstore}
                         width="150"
@@ -28,6 +31,7 @@ const Contact = () => {
                         className="inline-block align-top mt-1 mr-2 ml-2 sm:flex-col"
                         alt="Play Store"
                     />
+                    </a>
                 </div>
             </div>
 

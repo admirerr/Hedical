@@ -54,7 +54,7 @@ const MainPage = () => {
               className="w-[80%] flex justify-center items-center text-center text-[#17A589] text-[3vh]"
               style={{ fontWeight: 600 }}
             >
-              Check Hospitals Availability
+              Check Doctors Availability
             </div>
           </div>
           <div></div>

@@ -11,23 +11,23 @@ const GetAmbulance = () => {
           </div>
           <div class="bg-white card shadow-lg text-center">
             <h1 class="counter-count ">2204+</h1>
-            <p className="">Hospitals</p>
+            <p className="">Dcotors</p>
           </div>
           <div class="bg-white card shadow-lg text-center">
             {/* <!-- <h1 class="counter-count">1333+</h1> --> */}
             <h1 class="counter-count ">6000 +</h1>
-            <p className="">Drivers</p>
+            <p className="">Medicines</p>
           </div>
         </div>
         <div class="app-previewBottom">
           <div class="heading text-center">
-            <h1 class="text-white">Book &amp; Get Ambulance in 10 Minutes</h1>
+            <h1 class="text-white">Book &amp; Get Medicines and Dcotor's Assitance </h1>
             <a
               href="https://play.google.com/store/apps/details?id=com.medcab.consumer"
               target="_blank"
               class="text-decoration-none bg-white shadow-lg my-2 primary-cta"
             >
-              Download MedCab App
+              Download RailHealth App
             </a>
           </div>
           <div class="image-wrapper owl-theme">
