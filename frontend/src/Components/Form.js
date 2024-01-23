@@ -16,33 +16,46 @@ const Form=()=>{
         />
             </div>
           <div style={styles.contactContainer}>
-            <h2 style={styles.sectionTitle}>Contact Us</h2>
+            <h2 style={styles.sectionTitle}>Get in Touch</h2>
             <p style={styles.sectionSubtitle}>
               Have any question or query? Get in touch with us.
             </p>
             <form style={styles.contactForm}>
+              <div className='flex gap-2'>
               <input
                 type="text"
-                placeholder="Your Name"
+                placeholder="First Name"
                 style={styles.inputField}
-                // onChange={(e) => setName(e.target.value)}
-                // value={name}
+                
+                required
+              />
+              <input
+                type="text"
+                placeholder="Last Name"
+                style={styles.inputField}
+                
+                required
+              />
+              </div>
+              <input
+                type="text"
+                placeholder="Phone Number"
+                style={styles.inputField}
+                
                 required
               />
               <input
                 type="email"
                 placeholder="Your Email"
                 style={styles.inputField}
-                // onChange={(e) => setEmail(e.target.value)}
-                // value={email}
+               
                 required
               />
               <textarea
                 placeholder="Your Message"
                 rows="5"
                 style={styles.textareaField}
-                // onChange={(e) => setMessage(e.target.value)}
-                // value={message}
+                
                 required
               ></textarea>
               <button type="submit" style={styles.submitButton}>
@@ -103,9 +116,10 @@ const Form=()=>{
         borderRadius: "5px",
         fontSize: "1rem",
         color: "#fff",
-        background: "#007bff",
+        background: "#17A589",
         cursor: "pointer",
         transition: "background 0.3s ease",
+        width:"100%"
       },
     };
     
