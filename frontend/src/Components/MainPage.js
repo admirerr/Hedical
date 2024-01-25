@@ -13,7 +13,6 @@ const MainPage = () => {
       <div className="flex flex-col-reverse lg:flex-row mt-[0%] mx-[5%] ">
         <div className="mt-[5%] w-full lg:w-[45%] flex flex-col">
           <LocationCard />
-          {/* Emergeny call button */}
           <div
             className="rounded-[30px] flex flex-row p-2 mt-5"
             style={{

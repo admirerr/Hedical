@@ -7,7 +7,9 @@ import Contact from './Contact';
 import Footer from './Footer';
 import MainComponent from './MainComponent';
 import About from './About';
+import Card from './Cards';
 import Form from './Form';
+import Consultancy from './Consultancy';
 const HomePage = () => {
     return (
         <div>
@@ -19,6 +21,7 @@ const HomePage = () => {
            <About/>
            <Form/>
            <Footer/>
+           <Consultancy/>
         </div>
     );
 }
