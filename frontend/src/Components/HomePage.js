@@ -7,19 +7,21 @@ import Contact from './Contact';
 import Footer from './Footer';
 import About from './About';
 import Form from './Form';
+import Consultancy from './Consultancy';
+
 const HomePage = () => {
     return (
         <div>
             {/* <h1>Home Page</h1> */}
-           <MainPage />
+           {/* <MainPage />
            <Stations />
            
            <GetAmbulance/>
            <Contact  />
            <About/>
            <Form/>
-           <Footer/>
-           
+           <Footer/> */}
+           <Consultancy/>
         </div>
     );
 }
