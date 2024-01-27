@@ -1,5 +1,14 @@
-import React from "react";
+import React,{useState} from "react";
+import Popup from "./Popup";
 function Card(){
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const handleOpenPopup = () => {
+    setIsPopupOpen(true);
+  };
+
+  const handleClosePopup = () => {
+    setIsPopupOpen(false);
+  };
     return (
         <>
   <div className=" w-[60%]  lg:flex ml-[27.5vw] mt-[10vh] " style={{width:"50%"}}>
@@ -15,14 +24,15 @@ function Card(){
       </p>
       <div className="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
       <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
-    </div>
-    {/* <div className="flex items-center">
-      <img className="w-10 h-10 rounded-full mr-4" src="/img/jonathan.jpg" alt="Avatar of Jonathan Reinink"/>
-      <div className="text-sm">
-        <p className="text-gray-900 leading-none">Jonathan Reinink</p>
-        <p className="text-gray-600">Aug 18</p>
+      <div className="ml-[25.5vw]">
+      <button class="bg-blue-500 text-white px-4 py-2 rounded"
+        onClick={handleOpenPopup}
+       
+      >Talk to a doctor <span></span> </button>
+       {isPopupOpen && <Popup onClose={handleClosePopup} />}
       </div>
-    </div> */}
+    </div>
+    
   </div>
 </div>
 </>
