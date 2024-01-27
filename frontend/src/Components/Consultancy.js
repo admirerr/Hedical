@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "./Cards";
-import logoD from "../images/logoD.png";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavbarComponent from "./Navbar";
@@ -8,19 +7,6 @@ import contact from "../images/ContactUs.png";
 const Consultancy=()=>{
     return (
    <>
-   {/* <div className="flex">
-
-     <img
-          src={logoD}
-          width="50"
-          height="50"
-          className="d-inline-block align-top mt-1 mr-2"
-          style={{ marginLeft: "10px" }}
-          alt=""
-        />
-        <Navbar.Brand href="#" style={{color:"#000000"}}>RailHealth</Navbar.Brand>
-        </div>
-        <div> */}
 <NavbarComponent/>
 <div className="flex gap-[20rem]">
     <div class="text-black ml-40 text-xl bold mt-10 p-[2] w-[50%]">

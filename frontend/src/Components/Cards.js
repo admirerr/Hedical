@@ -1,5 +1,6 @@
 import React,{useState} from "react";
-import Popup from "./Popup";
+// import Popup from "./Popup";
+import DoctorPagePopUp from "./DoctorPagePopUp";
 function Card(){
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const handleOpenPopup = () => {
@@ -29,7 +30,7 @@ function Card(){
         onClick={handleOpenPopup}
        
       >Talk to a doctor <span></span> </button>
-       {isPopupOpen && <Popup onClose={handleClosePopup} />}
+       {isPopupOpen && <DoctorPagePopUp onClose={handleClosePopup} />}
       </div>
     </div>
     

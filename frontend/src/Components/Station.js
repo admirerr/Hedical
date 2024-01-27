@@ -110,7 +110,7 @@ export default function Station() {
       />
       <div class="card-body">
         <h5 class="card-title" style={{ textAlign: "center" }}>
-          Our Community
+          Prayagraj
         </h5>
         
       </div>

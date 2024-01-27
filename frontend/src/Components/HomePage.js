@@ -13,14 +13,14 @@ const HomePage = () => {
     return (
         <div>
             {/* <h1>Home Page</h1> */}
-           {/* <MainPage />
+           <MainPage />
            <Stations />
            
            <GetAmbulance/>
            <Contact  />
            <About/>
            <Form/>
-           <Footer/> */}
+           <Footer/>
            <Consultancy/>
         </div>
     );
