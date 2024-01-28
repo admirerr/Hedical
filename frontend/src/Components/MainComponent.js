@@ -1,3 +1,4 @@
+// MainComponent.js
 
 import React, { useState } from 'react';
 import Popup from './Popup';
@@ -15,6 +16,7 @@ const MainComponent = () => {
 
   return (
     <div>
+      {/* Your main content goes here */}
       <button
         className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
         onClick={handleOpenPopup}

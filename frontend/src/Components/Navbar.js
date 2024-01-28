@@ -3,10 +3,18 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import React from "react";
+import React, { useState } from "react";
 import logoD from "../images/logoD.png";
 import "../App.css";
+import LoginPopup from "./LoginPopup";
 function NavbarComponent() {
+  const [showLoginCard,setshowLoginCard]=useState(false)
+  const handleLoginClick=()=>{
+     setshowLoginCard(!showLoginCard);
+  }
+  const handleCloseLoginPopup=()=>{
+    setshowLoginCard(false);
+  }
   return (
     <Navbar expand="lg" style={{ backgroundColor: "#17A589" }}>
       <Container fluid>
@@ -87,10 +95,12 @@ function NavbarComponent() {
           <Form className="d-flex">
             <Button
               variant="outline-success"
+              onClick={handleLoginClick}
               style={{ backgroundColor: "#33acdd", color: "#FFFFFF" }}
             >
               Login
             </Button>
+            {showLoginCard && <LoginPopup onClose={handleCloseLoginPopup} />}
           </Form>
         </Navbar.Collapse>
       </Container>
