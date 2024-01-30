@@ -17,7 +17,7 @@ section{
     background-size: 100% 100%;
     background-position: center bottom;
     object-fit: cover;
-    gap: 4em;
+   
 }
 .py-4 {
     padding-top: 1.5rem!important;
@@ -28,11 +28,11 @@ section{
     padding-left: 0.5rem!important;
 }
 .app-preview .card {
-    height: 25vw;
-    width: 25vw;
+    height: 25em;
+    width: 25em;
     border-radius: 4rem;
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
     place-items: center;
     place-content: center;
 }

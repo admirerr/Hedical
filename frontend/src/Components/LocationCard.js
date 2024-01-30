@@ -172,7 +172,7 @@ const LocationCard = () => {
           style={{ fontWeight: "bold" }}
           onClick={handleOpenPopup}
         >
-          Search
+          Submit
         </div>
         {isPopupOpen && <Popup onClose={handleClosePopup} />}
       </div>

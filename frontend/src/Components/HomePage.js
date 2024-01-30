@@ -8,6 +8,7 @@ import Footer from './Footer';
 import About from './About';
 import Form from './Form';
 import Consultancy from './Consultancy';
+import Carts from './Carts';
 
 const HomePage = () => {
     return (
@@ -21,7 +22,9 @@ const HomePage = () => {
            <About/>
            <Form/>
            <Footer/>
-           <Consultancy/>
+           {/* <Consultancy/>
+           <Carts/> */}
+
         </div>
     );
 }

@@ -4,38 +4,61 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavbarComponent from "./Navbar";
 import contact from "../images/ContactUs.png";
-const Consultancy=()=>{
-    return (
-   <>
-<NavbarComponent/>
-<div className="flex gap-[20rem]">
-    <div class="text-black ml-40 text-xl bold mt-10 p-[2] w-[50%]">
-        <span class="font-bold block p-[3] " style={{padding:'3px'}}>Consult Specialist Doctors Online on</span>
-        <span class="font-semibold block"  style={{padding:'3px'}}>Video/Audio Call & and Chat</span>
-        <span class="font-medium block"  style={{padding:'5px'}}>Consult Doctors from Top Hospitals within 30 minutes</span>
-    <button class="bg-blue-500 text-white px-4 py-2 rounded">Talk to a doctor <span></span> </button>
-</div>
-<div>
-<div className="w-[40%]">
-            <img
-            style={{marginLeft:'25%',marginTop:'10%'}}
-          src={contact}
-          width="100%"
-          height="100%"
-          padding="3rem"
-        //   className="d-inline-block align-top mt-1 mr-2"
-        //   style={{ marginLeft: "10px" }}
+import Card1 from "./Card1";
+const Consultancy = () => {
+  return (
+    <>
+      {/* <div className="flex">
+
+     <img
+          src={logoD}
+          width="50"
+          height="50"
+          className="d-inline-block align-top mt-1 mr-2"
+          style={{ marginLeft: "10px" }}
           alt=""
         />
+        <Navbar.Brand href="#" style={{color:"#000000"}}>RailHealth</Navbar.Brand>
+        </div>
+        <div> */}
+      <NavbarComponent />
+      <div className="flex md:justify-center p-3 md:p-5 bg-gray-200 md:flex-row md:items-start flex-col-reverse items-center">
+        <div className="text-black text-xl bold ">
+          <div>
+            {" "}
+            <div className="md:mb-4">
+              {" "}
+              <span class="font-semibold block p-[3px] md:text-[25px] text-[18px]">
+                Consult Specialist Doctors Online on Video/Audio Call & and Chat
+              </span>
+              {/* <span class="font-semibold block p-[3px] text-[25px]">
+              </span> */}
             </div>
-</div>
-</div>
+            <div>
+              <span class="font-medium block p-[5px] md:text-[18px] text-[15px]">
+                Consult Doctors from Top Hospitals within 30 minutes
+              </span>
 
-        
-   <Card/>
-   <Card/>
-   <Card/>
-   </>
-    )
-}
+            </div>
+          </div>
+
+          {/* <button class="bg-blue-500 text-white px-4 py-2 rounded">Talk to a doctor <span></span> </button> */}
+        </div>
+        <div className="md:h-full h-[30vw] mb-4 md:mb-0">
+          <img
+            src={contact}
+            alt="Contact"
+            className="md:-[30vw] md:h-[18vw] w-full h-full object-cover"
+          ></img>
+        </div>
+      </div>
+
+      <div className="flex flex-row flex-wrap justify-center mt-4">
+        <Card1 />
+        <Card1 />
+        <Card1 />
+      </div>
+    </>
+  );
+};
 export default Consultancy;
