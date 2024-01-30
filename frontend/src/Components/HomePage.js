@@ -24,7 +24,6 @@ const HomePage = () => {
            <Footer/>
            {/* <Consultancy/>
            <Carts/> */}
-
         </div>
     );
 }
