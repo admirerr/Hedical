@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "./Cards";
-import logoD from "../images/logoD.png";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavbarComponent from "./Navbar";
@@ -39,6 +38,7 @@ const Consultancy = () => {
               <span class="font-medium block p-[5px] md:text-[18px] text-[15px]">
                 Consult Doctors from Top Hospitals within 30 minutes
               </span>
+
             </div>
           </div>
 
