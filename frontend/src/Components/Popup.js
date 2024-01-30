@@ -50,8 +50,8 @@ const Popup = ({ onClose }) => {
 
       {/* Popup */}
       
-      <div className="fixed inset-0 flex items-center justify-center z-50">
-        <div className="bg-white p-6 rounded shadow-lg z-10 w-[30%] rounded-[20px]"
+      <div className="fixed inset-0 px-8 flex items-center justify-center z-50">
+        <div className="bg-white p-6 rounded shadow-lg z-10  rounded-[20px]"
         style={{
           boxShadow: "-3px 3px 4px 0px #17A589",
           border: "2.5px solid #17A589",

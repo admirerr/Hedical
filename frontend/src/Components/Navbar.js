@@ -85,12 +85,16 @@ function NavbarComponent() {
             </Nav.Link>
           </Nav>
           <Form className="d-flex">
-            <Button
-              variant="outline-success"
-              style={{ backgroundColor: "#33acdd", color: "#FFFFFF" }}
-            >
-              Login
-            </Button>
+          <button
+    className="btn btn-primary"
+    type="button"
+   
+    data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasRight"
+    aria-controls="offcanvasRight"
+  >
+    Login
+  </button>
           </Form>
         </Navbar.Collapse>
       </Container>
