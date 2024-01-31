@@ -1,12 +1,47 @@
+// import './App.css';
+// import HomePage from './Components/HomePage';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import TemporaryDrawer from './Components/Slider';
+// import Consultancy from './Components/Consultancy';
+
+// function App() {
+//   return (
+//     <div className="App">
+      
+//       <TemporaryDrawer/>
+//       <HomePage />
+
+//       < Consultancy />
+//     </div>
+//   );
+// }
+
+// export default App;
+import React from 'react';
 import './App.css';
-import HomePage from './Pages/HomePage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './Components/HomePage';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import TemporaryDrawer from './Components/Slider';
+import Consultancy from './Components/Consultancy';
+import SearchBar from './Components/SearchBar';
+
 function App() {
   return (
-    <div className="App">
-      <HomePage />
-    </div>
+    <Router>
+      <div className="App">
+      <TemporaryDrawer/>
+
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/consultancy" element={<Consultancy />} />
+        </Routes>
+      </div>
+    </Router>
+    
   );
 }
 
 export default App;
+
+

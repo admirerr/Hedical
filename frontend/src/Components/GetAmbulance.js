@@ -1,27 +1,30 @@
 import React from "react";
 import "../style.css";
+import mobilePic1 from '../images/mobilePic1.png'
+import mobilePic2 from '../images/mobilePic2.png'
+import mobilePic3 from '../images/mobilePic3.png'
 const GetAmbulance = () => {
   return (
     <>
       <section class="app-preview get-ambulance">
-        <div class="app-previewTop flex justify-center text-[120%]  py-4 px-2 cards">
-          <div class="bg-white card p-5  shadow-lg text-center">
-            <h1 class="   counter-count ">5756+</h1>
+        <div class="app-previewTop  flex  justify-center text-[120%]  py-4 px-2 cards">
+          <div class="bg-white m-2 flex flex-col justify-center rounded-md h-[20vh]  w-[30vh]  shadow-lg text-center">
+            <h1 class=" bg-gradient-to-r text-4xl from-green-400 to-blue-500 text-transparent bg-clip-text  counter-count ">5756+</h1>
             <p className=" ">Cities</p>
           </div>
-          <div class="bg-white card shadow-lg text-center">
-            <h1 class="counter-count ">2204+</h1>
-            <p className="">Dcotors</p>
+          <div class="bg-white flex flex-col   justify-center h-[20vh] rounded-md w-[30vh] m-2  shadow-lg text-center">
+            <h1 class="counter-count bg-gradient-to-r text-4xl from-green-400 to-blue-500 text-transparent bg-clip-text">2204+</h1>
+            <p className="">Doctors</p>
           </div>
-          <div class="bg-white card shadow-lg text-center">
+          <div class="bg-white flex flex-col justify-center  h-[20vh] rounded-md w-[30vh]  m-2 shadow-lg text-center">
             {/* <!-- <h1 class="counter-count">1333+</h1> --> */}
-            <h1 class="counter-count ">6000 +</h1>
+            <h1 class="counter-count bg-gradient-to-r text-4xl  from-green-400 to-blue-500 text-transparent bg-clip-text">6000 +</h1>
             <p className="">Medicines</p>
           </div>
         </div>
-        <div class="app-previewBottom">
+        <div class="app-previewBottom w-[100vw]">
           <div class="heading text-center">
-            <h1 class="text-white">Book &amp; Get Medicines and Dcotor's Assitance </h1>
+            <h1 class="text-white">Book &amp; Get Medicines and Doctor's Assitance </h1>
             <a
               href="https://play.google.com/store/apps/details?id=com.medcab.consumer"
               target="_blank"
@@ -30,23 +33,26 @@ const GetAmbulance = () => {
               Download RailHealth App
             </a>
           </div>
-          <div class="image-wrapper owl-theme">
+          <div class="image-wrapper flex flex-col md:flex-row owl-theme">
             <div class="preview-image item">
               <img
-                src="https://medcab.in/assets/website-images/Wood-Hand.png"
+                src={mobilePic1}
                 alt="icon "
+                style={{height:'500px'}}
               />
             </div>
             <div class="preview-image item">
               <img
-                src="https://medcab.in/assets/website-images/iPhone 12 Pro (Wooden Hands).png"
-                alt="icon "
+               src={mobilePic3}
+               alt="icon "
+               style={{height:'500px'}}
               />
             </div>
             <div class="preview-image item">
               <img
-                src="https://medcab.in/assets/website-images/Wood-Hand-1.png"
-                alt="icon "
+               src={mobilePic2}
+               alt="icon "
+               style={{height:'500px'}}
               />
             </div>
           </div>

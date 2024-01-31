@@ -6,6 +6,7 @@ import { faDotCircle } from "@fortawesome/free-regular-svg-icons"; // Use the ap
 import { call } from "./icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Stations from "./Station";
+import gif from '../images/runningTrain.gif'
 const MainPage = () => {
   return (
     <div>

@@ -3,18 +3,11 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import React, { useState } from "react";
+import React from "react";
 import logoD from "../images/logoD.png";
+import { Link } from "react-router-dom";
 import "../App.css";
-import LoginPopup from "./LoginPopup";
 function NavbarComponent() {
-  const [showLoginCard,setshowLoginCard]=useState(false)
-  const handleLoginClick=()=>{
-     setshowLoginCard(!showLoginCard);
-  }
-  const handleCloseLoginPopup=()=>{
-    setshowLoginCard(false);
-  }
   return (
     <Navbar expand="lg" style={{ backgroundColor: "#17A589" }}>
       <Container fluid>
@@ -69,13 +62,13 @@ function NavbarComponent() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="#action1" style={{ color: "white" }}>
+            <Nav.Link as={Link} to="/" style={{ color: "white" }}>
               Home
             </Nav.Link>
             <Nav.Link href="#action2" style={{ color: "white" }}>
               Our Services
             </Nav.Link>
-            <Nav.Link href="#action1" style={{ color: "white" }}>
+            <Nav.Link as={Link} to="/consultancy" style={{ color: "white" }}>
               Consult Doctors
             </Nav.Link>
             <Nav.Link href="#action1" style={{ color: "white" }}>
@@ -93,14 +86,16 @@ function NavbarComponent() {
             </Nav.Link>
           </Nav>
           <Form className="d-flex">
-            <Button
-              variant="outline-success"
-              onClick={handleLoginClick}
-              style={{ backgroundColor: "#33acdd", color: "#FFFFFF" }}
-            >
-              Login
-            </Button>
-            {showLoginCard && <LoginPopup onClose={handleCloseLoginPopup} />}
+          <button
+    className="btn btn-primary"
+    type="button"
+   
+    data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasRight"
+    aria-controls="offcanvasRight"
+  >
+    Login
+  </button>
           </Form>
         </Navbar.Collapse>
       </Container>

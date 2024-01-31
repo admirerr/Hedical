@@ -12,12 +12,12 @@ section{
 }
 .app-previewTop {
     height: 20rem;
-    background: url('https://medcab.in/assets/website-images/wave-bg.png');
+    background: url('C:\COLLEGE\Completed\MINE\HedicL\Hedical\frontend\src\images\wave-bg.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center bottom;
     object-fit: cover;
-    gap: 4em;
+   
 }
 .py-4 {
     padding-top: 1.5rem!important;
@@ -28,11 +28,11 @@ section{
     padding-left: 0.5rem!important;
 }
 .app-preview .card {
-    height: 25vw;
-    width: 25vw;
+    height: 25em;
+    width: 25em;
     border-radius: 4rem;
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
     place-items: center;
     place-content: center;
 }
@@ -60,7 +60,7 @@ section{
 }
 .app-previewBottom {
     /* background: var(--primary-clr); */
-    background: #C4364E;
+    background: #17A589;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -89,6 +89,7 @@ section{
     align-items: center;
     gap: 5em;
     padding: 0 4em;
+    
 }
 .app-preview .image-wrapper .preview-image {
     z-index: 1;

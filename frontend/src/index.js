@@ -9,7 +9,9 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import {faCirclePlus} from '@fortawesome/free-solid-svg-icons';
 import { faClock } from '@fortawesome/free-regular-svg-icons';
 import {  faCalendar} from "@fortawesome/free-solid-svg-icons";
-// import { faCalendar } from '@fortawesome/free-duotone-svg-icons'; 
+import { faUserMd } from '@fortawesome/free-solid-svg-icons';
+import { faPills } from '@fortawesome/free-solid-svg-icons';
+import { faPerson } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Add the icons to the library
@@ -17,6 +19,10 @@ library.add(faPhone);
 library.add(faCirclePlus);
 library.add(faClock);
 library.add(faCalendar);
+library.add(faUserMd);
+library.add(faPills);
+library.add(faPerson);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

@@ -19,25 +19,12 @@ return (
 <hr></hr>
 
 <p><span></span >A valid prescription contains:</p>
-            <p className="gap-[2rem]"> <span> <FontAwesomeIcon icon="fa-solid fa-calendar"  style={{ width: '20px', height: '20px' }} /></span>Doctor Details</p>
-           
-            <p> 
-                <span> <FontAwesomeIcon
-                icon="phone"
-                style={{ color: "#17A589" }}
-                className="w-[38px] h-[38px] bg-white p-1"
-              
-              />  </span>Date of Prescription</p>
-            <p> <span> <FontAwesomeIcon
-                icon="phone"
-                style={{ color: "#17A589" }}
-                className="w-[38px] h-[38px] bg-white "
-              /> </span>Patient Details</p>
-            <p> <span> <FontAwesomeIcon
-                icon="phone"
-                style={{ color: "#17A589" }}
-                className="w-[38px] h-[38px] bg-white"
-              /> </span>Dosage Details</p>
+            <p> <span> <FontAwesomeIcon icon="fas fa-user-md"  style={{ width: '30px', height: '30px' }} /></span>Doctor Details</p>
+            <p> <span> <FontAwesomeIcon icon="fa-solid fa-calendar"  style={{ width: '25px', height: '25px'}} /></span>Date of Prescription</p>
+            <p> <span> <FontAwesomeIcon icon="fa-solid fa-person" style={{ width: '30px', height: '30px' }} /> </span>Patient Details</p>
+            <p> <span><FontAwesomeIcon icon="fa-solid fa-pills" style={{ width: '30px', height: '30px' }}  />  </span>Dosage Details</p>
+
+            
 </div>
 </div>
 </>

@@ -21,7 +21,7 @@ export default function About() {
   };
 
   return (
-    <div style={aboutStyle}>
+    <div className="px-2" style={aboutStyle}>
       <h2>About Us</h2>
       <p>
         RailHealth is a platform that provides health-based facilities to the passengers travelling by the train. We provide you with the complete set of health

@@ -1,65 +1,69 @@
 import React from 'react'
-import Philosophy from "../images/Philosophy.webp";
-import Service from "../images/Service.webp";
-import Community from "../images/Community.webp";
-
+import varanasiRailway from "../images/varanasiRailway2.jpg"
+import lucknowRailway from "../images/lucknow1.jpeg"
+import prayag from "../images/prayag1.png"
+import mumbai from "../images/mumbaiS.png"
+import kanpur from "../images/kanpurS.png"
+import fatehpur from "../images/fatehpurR.png"
 export default function Station() {
   return (
     <>
-    <div className="container" >
+    <div className="container " >
       <div
         style={{
           textAlign: "center",
           color: "black",
           background: "",
           padding: "20px 0",
+          
         }}
       >
-        <h3>Some of the important Stations we deliver at</h3>
+        <h3 className='font-semibold'>Some of the Important Stations We Deliver At!!</h3>
       </div>
       <div className="container">
-        <div class="card-group">
-          <div class="card mx-2" style={{ border: "none" }}>
-            <img
-              class="card-img-top rounded-circle"
-              src={Philosophy}
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title" style={{ textAlign: "center" }}>
-              Bengaluru
-              </h5>
-            
-            </div>
-          </div>
-          <div class="card mx-2" style={{ border: "none" }}>
-            <img
-              class="card-img-top rounded-circle"
-              src={Service}
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title" style={{ textAlign: "center" }}>
-                Pune
-              </h5>
-             
-            </div>
-          </div>
-          <div class="card  mx-2" style={{ border: "none" }}>
-            <img
-              class="card-img-top rounded-circle"
-              src={Community}
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title" style={{ textAlign: "center" }}>
-               Hyderabad
-              </h5>
-            
-            </div>
-          </div>
-        </div>
+  <div class="card-group">
+    <div class="card mx-2" style={{ border: "none" }}>
+      <img
+        class="card-img-top  rounded-circle"
+        src={varanasiRailway}
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <h5 class="card-title" style={{ textAlign: "center" }}>
+          Varanasi
+        </h5>
+       
       </div>
+    </div>
+    <div class="card mx-2" style={{ border: "none" }}>
+      <img
+        class="card-img-top rounded-circle"
+        src={lucknowRailway}
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <h5 class="card-title" style={{ textAlign: "center" }}>
+            Lucknow
+        </h5>
+       
+      </div>
+    </div>
+    {/* <div></div> */}
+    <div class="card  mx-2" >
+      <img
+        class="card-img-top rounded-circle"
+        src={prayag}
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <h5 class="card-title" style={{ textAlign: "center" }}>
+          Prayagraj
+        </h5>
+        
+      </div>
+    </div>
+  </div>
+</div>
     </div>
 
 <div className="container">
@@ -78,12 +82,12 @@ export default function Station() {
     <div class="card mx-2" style={{ border: "none" }}>
       <img
         class="card-img-top  rounded-circle"
-        src={Philosophy}
+        src={mumbai}
         alt="Card image cap"
       />
       <div class="card-body">
         <h5 class="card-title" style={{ textAlign: "center" }}>
-          Chennai
+          Mumbai
         </h5>
        
       </div>
@@ -91,12 +95,12 @@ export default function Station() {
     <div class="card mx-2" style={{ border: "none" }}>
       <img
         class="card-img-top rounded-circle"
-        src={Service}
+        src={kanpur}
         alt="Card image cap"
       />
       <div class="card-body">
         <h5 class="card-title" style={{ textAlign: "center" }}>
-            Delhi
+            kanpur
         </h5>
        
       </div>
@@ -105,12 +109,12 @@ export default function Station() {
     <div class="card  mx-2" >
       <img
         class="card-img-top rounded-circle"
-        src={Community}
+        src={fatehpur}
         alt="Card image cap"
       />
       <div class="card-body">
         <h5 class="card-title" style={{ textAlign: "center" }}>
-          Our Community
+          Fatehpur
         </h5>
         
       </div>

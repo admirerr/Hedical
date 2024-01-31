@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Popup from './Popup';
 const LocationCard = () => {
   const [label, setLabel] = useState("pnr");
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  
   const [color,setColor]=useState({"a":1,"b":0,"c":0});
-
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
   const handleOpenPopup = () => {
     setIsPopupOpen(true);
   };
@@ -172,7 +172,7 @@ const LocationCard = () => {
           style={{ fontWeight: "bold" }}
           onClick={handleOpenPopup}
         >
-          Search
+          Submit
         </div>
         {isPopupOpen && <Popup onClose={handleClosePopup} />}
       </div>
