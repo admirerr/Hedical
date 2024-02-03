@@ -62,11 +62,7 @@ const MainPage = () => {
         </div>
         <div className="lg:w-[65%] w-full ml-2 ">
           <div className="header-image">
-            <img
-              src="https://medcab.in/assets/website-images/website-gif-final.gif"
-              class="img-fluid"
-              alt="banner"
-            />
+            
           </div>
         </div>
       </div>

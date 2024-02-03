@@ -100,7 +100,7 @@ export default function Station() {
       />
       <div class="card-body">
         <h5 class="card-title" style={{ textAlign: "center" }}>
-            kanpur
+            Kanpur
         </h5>
        
       </div>

@@ -118,17 +118,17 @@ const Footer=()=>{
           style={{ marginLeft: "10px" }}
           alt=""
         />
-        <span className="ml-3 text-xl">Hedical</span>
+        <span className="ml-3 text-xl">RailHealth</span>
       </a>
       <p className="text-sm text-gray-400 sm:ml-6 sm:mt-0 mt-4">
-        © 2024 Hedical —
+        © 2024 RailHealth —
         <a
           href="https://twitter.com/knyttneve"
           className="text-gray-500 ml-1"
           target="_blank"
           rel="noopener noreferrer"
         >
-          @irctc
+          @RailHealth
         </a>
       </p>
       <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
