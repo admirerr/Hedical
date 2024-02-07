@@ -1,15 +1,10 @@
 import React from "react";
-import Card from "./Cards";
-import logoD from "../images/logoD.png";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavbarComponent from "./Navbar";
-import contact from "../images/ContactUs.png";
-import Card1 from "./Card1";
 const Consultancy = () => {
   return (
     <>
-      
       <NavbarComponent />
       <div className="flex md:justify-center p-3 md:p-5  md:flex-row md:items-start flex-col-reverse items-center">
         <div className="text-black text-xl bold ">
@@ -17,43 +12,130 @@ const Consultancy = () => {
             {" "}
             <div className="md:mb-4">
               {" "}
-              <span class="font-semibold block p-[3px] md:text-[25px] text-[18px]">
-                Consult Specialist Doctors Online on Video/Audio Call & and Chat
+              <span className="font-semibold block p-[3px] md:text-[25px] text-[18px]">
+                Consult Specialist Doctors Online
               </span>
-              {/* <span class="font-semibold block p-[3px] text-[25px]">
-              </span> */}
+              <span className="font-semibold block p-[3px] md:text-[25px] text-[18px]">
+                on Video/Audio Call & and Chat
+              </span>
+              <span className="font-semibold block p-[3px] text-[25px]"></span>
             </div>
             <div>
-              <span class="font-medium block p-[5px] md:text-[18px] text-[15px]">
+              <span className="font-medium block p-[5px] md:text-[18px] text-[15px]">
                 Consult Doctors from Top Hospitals within 30 minutes
               </span>
             </div>
           </div>
 
-          {/* <button class="bg-blue-500 text-white px-4 py-2 rounded">Talk to a doctor <span></span> </button> */}
+          <button class="bg-blue-500 text-white px-4 py-2 rounded mt-10">
+            Talk to a doctor <span></span>{" "}
+          </button>
         </div>
         <div className="md:h-full h-[30vw] mb-4 md:mb-0">
           <img
-            src={contact}
+            src="	https://www.medibuddy.in/assets/images/talk-to-doc.png"
             alt="Contact"
-            className="md:-[30vw] md:h-[18vw] w-full h-full object-cover"
+            className="md:-[30vw] md:h-[18vw] w-full h-full object-cover ml-20"
           ></img>
         </div>
       </div>
 
-      <div className="flex flex-row flex-wrap justify-center mt-4">
-        <Card1 
-          description=" Diagnose and treat a variety of neurological disorders, such as epilepsy, stroke, multiple sclerosis, and headaches and  performing neurological examinations, and conduct diagnostic tests like imaging studies (MRI, CT scans) and electrodiagnostic tests (EEG, EMG) to aid in diagnosis. "
-          specialisation="Neurologist"
-        />
-        <Card1 
-            description="Specialize in the diagnosis, treatment, and prevention of mental illnesses and emotional disorders, diagnose mental health conditions by considering biological, psychological, and social factors."
-            specialisation="Psychiatrists "
-        />
-        <Card1 
-          description="Specialize in women's reproductive health and  provide care related to pregnancy, childbirth, and the female reproductive system and also address issues like family planning, gynecological conditions, and menopause."
-          specialisation="Obstetricians and Gynecologists"
-        />
+      <div>
+        <section className="text-gray-600 body-font">
+          <div className="container px-5 py-24 mx-auto">
+            <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+              <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                <img
+                  className="w-full h-full shadow-lg rounded-full"
+                  src="https://docsapp-doctor.s3.us-west-2.amazonaws.com/profile_images/27927.png"
+                  alt="doctor-img1"
+                />
+              </div>
+              <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                <h2 className="text-gray-900 text-lg title-font font-bold mb-2">
+                  Dr. Himanshu Mansharamani
+                </h2>
+                <p className="leading-relaxed text-base">
+                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                  taxidermy. Gastropub indxgo juice poutine.
+                </p>
+                <button className="flex mx-auto mt-10 text-white bg-indigo-500 border-0 py-2 px-7 focus:outline-none hover:bg-indigo-600 rounded text-md">
+                  Consult Now
+                </button>
+              </div>
+            </div>
+            <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+              <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                <h2 className="text-gray-900 text-lg title-font font-bold mb-2">
+                  Dr. Ajay Kumar
+                </h2>
+                <p className="leading-relaxed text-base">
+                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                  taxidermy. Gastropub indxgo juice poutine.
+                </p>
+                {/* <a className="mt-3 text-indigo-500 inline-flex items-center">
+                  Learn More
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    className="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a> */}
+                <button className="flex mx-auto mt-10 text-white bg-indigo-500 border-0 py-2 px-7 focus:outline-none hover:bg-indigo-600 rounded text-md">
+                  Consult Now
+                </button>
+              </div>
+              <div className="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                <img
+                  className="w-full h-full shadow-lg rounded-full"
+                  src="https://docsapp-doctor.s3.us-west-2.amazonaws.com/profile_images/27927.png"
+                  alt="doctor-img1"
+                />
+              </div>
+            </div>
+            <div className="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
+              <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                <img
+                  className="w-full h-full shadow-lg rounded-full"
+                  src="https://docsapp-doctor.s3.us-west-2.amazonaws.com/profile_images/27927.png"
+                  alt="doctor-img1"
+                />
+              </div>
+              <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                <h2 className="text-gray-900 text-lg title-font font-bold mb-2">
+                  Dr. Mithra Rangapriya D
+                </h2>
+                <p className="leading-relaxed text-base">
+                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                  taxidermy. Gastropub indxgo juice poutine.
+                </p>
+                {/* <a className="mt-3 text-indigo-500 inline-flex items-center">
+                  Learn More
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    className="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a> */}
+                <button className="flex mx-auto mt-10 text-white bg-indigo-500 border-0 py-2 px-7 focus:outline-none hover:bg-indigo-600 rounded text-md">
+                  Consult Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </>
   );

@@ -53,7 +53,7 @@ const DoctorPagePopUp = ({ onClose }) => {
           </div>
           <div className="mb-4 flex gap-[2rem]">
             <div className="relative flex">
-              <p className="text-black">Select Age</p>
+              <p className="text-black">Select Patient's gender</p>
               <select className="mb-4 ml-3">
                 <option>Male</option>
                 <option>Female</option>
@@ -61,11 +61,11 @@ const DoctorPagePopUp = ({ onClose }) => {
               </select>
             </div>
             <div>
-              <p className="text-black">Patient Age</p>
+              <p className="text-black">Date</p>
             </div>
             <div className="relative">
               <DatePicker
-                placeholderText="Select Age"
+                placeholderText="Select Date"
                 selected={selectedDate}
                 onChange={handleDateChange}
                 className="w-[80%] p-2 border border-gray-300 rounded-md text-lg focus:outline-none focus:border-blue-500"
@@ -86,7 +86,30 @@ const DoctorPagePopUp = ({ onClose }) => {
               />
             </div>
           </div>
-
+          <div className="mb-4 flex gap-[2rem]">
+            <div>
+              <p className="text-black">Patient's name</p>
+            </div>
+            <div>
+              <input
+                type="text"
+                className="mt-0 p-2 border border-gray-300 rounded-md"
+                placeholder="Enter your Name"
+              />
+            </div>
+          </div>
+          <div className="mb-4 flex gap-[2rem]">
+            <div>
+              <p className="text-black">Patient's age</p>
+            </div>
+            <div>
+              <input
+                type="number"
+                className="mt-0 p-2 border border-gray-300 rounded-md"
+                placeholder="Enter your age"
+              />
+            </div>
+          </div>
           <div className="flex">
             <button className="bg-blue-500 w-full text-white rounded py-2 hover:bg-blue-800">
               Next

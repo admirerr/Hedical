@@ -12,7 +12,8 @@ section{
 }
 .app-previewTop {
     height: 20rem;
-    background: url('C:\Users\ramsi\OneDrive\Desktop\Hedical\Hedical\frontend\src\images\wave-bg.png');
+    /* background: url('C:\Users\ramsi\OneDrive\Desktop\Hedical\Hedical\frontend\src\images\wave-bg.png'); */
+    background:url("../src/images/wave-bg.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center bottom;

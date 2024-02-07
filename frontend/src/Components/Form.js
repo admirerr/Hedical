@@ -10,8 +10,7 @@ const Form = () => {
           width="100%"
           height="100%"
           padding="3rem"
-          //   className="d-inline-block align-top mt-1 mr-2"
-          //   style={{ marginLeft: "10px" }}
+        
           alt=""
         />
       </div>
