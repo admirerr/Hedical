@@ -8,7 +8,6 @@ const cors = require("cors");
 
 const passengerRoutes = require("./routes/passengerRoutes");
 const appointmentRoutes = require("./routes/appointmentRoutes");
-
 dotenv.config();
 connectDB();
 const app = express();
@@ -30,7 +29,7 @@ app.use(cors(corsOptions));
 app.use(express.json());
 
 app.use("/", passengerRoutes);
-app.use("/", appointmentRoutes);
+app.use("/",appointmentRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, console.log(`Server running on PORT ${PORT}...`));

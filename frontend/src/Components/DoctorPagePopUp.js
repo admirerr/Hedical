@@ -14,7 +14,7 @@ const DoctorPagePopUp = ({ onClose }) => {
   const handleSelectChange = (e) => {
     setSelectedOption(e.target.value);
   };
-
+  
   return (
     <>
       <div className="fixed inset-0 bg-black opacity-90 backdrop-filter backdrop-blur-md z-50"></div>
