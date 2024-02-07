@@ -72,7 +72,7 @@ const LocationCard = () => {
   async function start1() {
     try {
       const response = await axios.request(options1);
-      console.log(response.data);
+      console.log(response);
     } catch (error) {
       console.error(error);
     }
