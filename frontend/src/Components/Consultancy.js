@@ -1,8 +1,19 @@
-import React from "react";
+import React,{useState} from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavbarComponent from "./Navbar";
+import DoctorPagePopUp from "./DoctorPagePopUp";
 const Consultancy = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const handleOpenPopup = () => {
+    setIsPopupOpen(true);
+    console.log("hi ");
+  };
+
+  const handleClosePopup = () => {
+    setIsPopupOpen(false);
+  };
   return (
     <>
       <NavbarComponent />
@@ -15,7 +26,7 @@ const Consultancy = () => {
               <span className="font-semibold block p-[3px] md:text-[25px] text-[18px]">
                 Consult Specialist Doctors Online
               </span>
-              <span className="font-semibold block p-[3px] md:text-[25px] text-[18px]">
+              <span className=" block p-[3px] md:text-[25px] text-[18px]">
                 on Video/Audio Call & and Chat
               </span>
               <span className="font-semibold block p-[3px] text-[25px]"></span>
@@ -52,54 +63,31 @@ const Consultancy = () => {
                 />
               </div>
               <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                <h2 className="text-gray-900 text-lg title-font font-bold mb-2">
-                  Dr. Himanshu Mansharamani
-                </h2>
-                <p className="leading-relaxed text-base">
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine.
-                </p>
-                <button className="flex mx-auto mt-10 text-white bg-indigo-500 border-0 py-2 px-7 focus:outline-none hover:bg-indigo-600 rounded text-md">
-                  Consult Now
-                </button>
+                <div className="lg:flex sm:block sm:w-auto">
+                  <div className="w-3/4 sm:w-auto">
+                    <h2 className="text-gray-900 text-lg title-font font-bold mb-2">
+                      Dr. Himanshu Mansharamani
+                    </h2>
+                    <ul>
+                      <li>MBBS</li>
+                      <li>9 year Experience</li>
+                      <li>Physician</li>
+                    </ul>
+                  </div>
+                  <div className="flex justify-center align-items-center lg:w-2/4 sm:w-auto">
+                    <button className="flex m-0 p-2 justify-center align-content-center  text-white bg-indigo-500 border-0 w-57 focus:outline-none hover:bg-indigo-600 rounded text-md "
+                     onClick={handleOpenPopup}
+                    >
+                      Consult Now
+                    </button>
+                    {isPopupOpen && (
+                      <DoctorPagePopUp onClose={handleClosePopup} />
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
             <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-              <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                <h2 className="text-gray-900 text-lg title-font font-bold mb-2">
-                  Dr. Ajay Kumar
-                </h2>
-                <p className="leading-relaxed text-base">
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine.
-                </p>
-                {/* <a className="mt-3 text-indigo-500 inline-flex items-center">
-                  Learn More
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    className="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </a> */}
-                <button className="flex mx-auto mt-10 text-white bg-indigo-500 border-0 py-2 px-7 focus:outline-none hover:bg-indigo-600 rounded text-md">
-                  Consult Now
-                </button>
-              </div>
-              <div className="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-                <img
-                  className="w-full h-full shadow-lg rounded-full"
-                  src="https://docsapp-doctor.s3.us-west-2.amazonaws.com/profile_images/27927.png"
-                  alt="doctor-img1"
-                />
-              </div>
-            </div>
-            <div className="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
               <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
                 <img
                   className="w-full h-full shadow-lg rounded-full"
@@ -108,30 +96,51 @@ const Consultancy = () => {
                 />
               </div>
               <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                <h2 className="text-gray-900 text-lg title-font font-bold mb-2">
-                  Dr. Mithra Rangapriya D
-                </h2>
-                <p className="leading-relaxed text-base">
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine.
-                </p>
-                {/* <a className="mt-3 text-indigo-500 inline-flex items-center">
-                  Learn More
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    className="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </a> */}
-                <button className="flex mx-auto mt-10 text-white bg-indigo-500 border-0 py-2 px-7 focus:outline-none hover:bg-indigo-600 rounded text-md">
-                  Consult Now
-                </button>
+                <div className="lg:flex sm:block sm:w-auto">
+                  <div className="w-3/4 sm:w-auto">
+                    <h2 className="text-gray-900 text-lg title-font font-bold mb-2">
+                      Dr. Himanshu Mansharamani
+                    </h2>
+                    <ul>
+                      <li>MBBS</li>
+                      <li>9 year Experience</li>
+                      <li>Physician</li>
+                    </ul>
+                  </div>
+                  <div className="flex justify-center align-items-center lg:w-2/4 sm:w-auto">
+                    <button className="flex m-0 p-2 justify-center align-content-center  text-white bg-indigo-500 border-0 w-57 focus:outline-none hover:bg-indigo-600 rounded text-md ">
+                      Consult Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+              <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                <img
+                  className="w-full h-full shadow-lg rounded-full"
+                  src="https://docsapp-doctor.s3.us-west-2.amazonaws.com/profile_images/27927.png"
+                  alt="doctor-img1"
+                />
+              </div>
+              <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                <div className="lg:flex sm:block sm:w-auto">
+                  <div className="w-3/4 sm:w-auto">
+                    <h2 className="text-gray-900 text-lg title-font font-bold mb-2">
+                      Dr. Himanshu Mansharamani
+                    </h2>
+                    <ul>
+                      <li>MBBS</li>
+                      <li>9 year Experience</li>
+                      <li>Physician</li>
+                    </ul>
+                  </div>
+                  <div className="flex justify-center align-items-center lg:w-2/4 sm:w-auto">
+                    <button className="flex m-0 p-2 justify-center align-content-center  text-white bg-indigo-500 border-0 w-57 focus:outline-none hover:bg-indigo-600 rounded text-md ">
+                      Consult Now
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

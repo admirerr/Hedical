@@ -5,12 +5,10 @@ const Form = () => {
     <section className="flex px-4 flex-col md:flex-row" style={styles.contactSection}>
       <div className="flex">
         <img
-        
           src={contact}
-          width="100%"
-          height="100%"
+          width="70%"
+          height="70%"
           padding="3rem"
-        
           alt=""
         />
       </div>
@@ -70,7 +68,7 @@ const styles = {
     display: "flex",
   },
   contactContainer: {
-    maxWidth: "600px",
+    maxWidth: "500px",
     margin: "0 auto",
   },
   sectionTitle: {

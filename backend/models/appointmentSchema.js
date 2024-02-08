@@ -9,9 +9,6 @@ const Appointment = mongoose.Schema({
   gender: {
     type: String,
   },
-  date: {
-    type: String,
-  },
   number: {
     type: Number,
   },

@@ -13,7 +13,7 @@ import { faUserMd } from '@fortawesome/free-solid-svg-icons';
 import { faPills } from '@fortawesome/free-solid-svg-icons';
 import { faPerson } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import {ChakraProvider} from '@chakra-ui/react';
 // Add the icons to the library
 library.add(faPhone);
 library.add(faCirclePlus);
@@ -26,7 +26,9 @@ library.add(faPerson);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <ChakraProvider>
     <App />
+    </ChakraProvider>
   </React.StrictMode>
 );
 reportWebVitals();

@@ -28,7 +28,7 @@ const GetAmbulance = () => {
             <a
               href="https://play.google.com/store/apps/details?id=com.medcab.consumer"
               target="_blank"
-              class="text-decoration-none bg-white shadow-lg my-2 primary-cta"
+              className="text-decoration-none bg-white shadow-lg my-2 primary-cta"
             >
               Download RailHealth App
             </a>
