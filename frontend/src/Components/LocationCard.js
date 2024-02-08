@@ -6,7 +6,7 @@ const LocationCard = () => {
   const [label, setLabel] = useState("pnr");
 
   const [color, setColor] = useState({ a: 1, b: 0, c: 0 });
-  const [btnColor,setbtnColor]=useState({d:1,e:0,f:0,g:0});
+  const [btnColor, setbtnColor] = useState(0);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const handleOpenPopup = (e) => {
     setIsPopupOpen(true);
@@ -24,8 +24,8 @@ const LocationCard = () => {
   const [selectedPerson, setSelectedPerson] = useState("");
   const [departureDate, setDepartureDate] = useState("");
   // console.log("pnr" + pnr);
-  
- const handlePassengers = async (e) => {
+
+  const handlePassengers = async (e) => {
     e.preventDefault();
     console.log(passengers[selectedPerson - 1].Berth);
     console.log(selectedPerson);
@@ -65,7 +65,7 @@ const LocationCard = () => {
       trainNo: "#####",
     },
     headers: {
-      'X-RapidAPI-Key': '2b98b608e9mshf3adbd38a1acf05p112931jsn837c933da93e',
+      "X-RapidAPI-Key": "2b98b608e9mshf3adbd38a1acf05p112931jsn837c933da93e",
       "X-RapidAPI-Host": "irctc1.p.rapidapi.com",
     },
   };
@@ -88,7 +88,7 @@ const LocationCard = () => {
         pnrNumber: pnr,
       },
       headers: {
-        'X-RapidAPI-Key': '2b98b608e9mshf3adbd38a1acf05p112931jsn837c933da93e',
+        "X-RapidAPI-Key": "2b98b608e9mshf3adbd38a1acf05p112931jsn837c933da93e",
         "X-RapidAPI-Host": "irctc1.p.rapidapi.com",
       },
     };
@@ -101,15 +101,7 @@ const LocationCard = () => {
         console.log(response.data.data.TrainNo);
         console.log(response.data.data.Doj);
         setTrainNo(response.data.data.TrainNo);
-        setDepartureDate(response.data.data.Doj)
-
-        // console.log("hi" + TrainNo);
-        
-        // console.log(response.data.data.PassengerStatus);
-        // setTrainNo(response.data.data.TrainNo);
-        // setPassengers(response.data.data.PassengerStatus);
-
-        // options1.params.trainNo = response.data.data.TrainNo;
+        setDepartureDate(response.data.data.Doj);
         start1();
       } catch (error) {
         console.error(error);
@@ -121,7 +113,7 @@ const LocationCard = () => {
 
   return (
     <div
-      className="p-3 flex flex-col rounded-[20px]"
+      className="p-2 flex flex-col rounded-[20px]"
       style={{
         boxShadow: "-3px 3px 4px 0px #17A589",
         border: "0.5px solid #17A589",
@@ -205,8 +197,13 @@ const LocationCard = () => {
               <label
                 for="default-radio-1"
                 className="min-width: 8rem text-align: center line-height: 1.5 inline-block text-md font-medium text-gray-900 dark:text-gray-900 cursor-pointer rounded-full py-[0.5rem] px-4 bg-blue border border-blue-600 hover:bg-blue-600 hover:text-white transition duration-300 ease-in-out"
+                style={
+                  btnColor == 1
+                    ? { backgroundColor: "blue", color: "white" }
+                    : null
+                }
                 onClick={() => {
-                  setbtnColor({ d: !btnColor.d, e: 0, f: 0, g: 0 });
+                  setbtnColor(1);
                   //  console.log(btnColor.d);
                 }}
               >
@@ -226,6 +223,15 @@ const LocationCard = () => {
               <label
                 for="default-radio-1"
                 class="min-width: 8rem text-align: center line-height: 1.5 inline-block text-md font-medium text-gray-900 dark:text-gray-900 cursor-pointer rounded-full py-[0.5rem] px-[1.9rem] bg-blue border border-blue-600 hover:bg-blue-600 hover:text-white transition duration-300 ease-in-out"
+                style={
+                  btnColor == 2
+                    ? { backgroundColor: "blue", color: "white" }
+                    : null
+                }
+                onClick={() => {
+                  setbtnColor(2);
+                  //  console.log(btnColor.d);
+                }}
               >
                 Get Doctor in Train
               </label>
@@ -244,6 +250,15 @@ const LocationCard = () => {
               <label
                 for="default-radio-1"
                 class="min-width: 8rem text-align: center line-height: 1.5 inline-block text-md font-medium text-gray-900 dark:text-gray-900 cursor-pointer rounded-full py-[0.5rem] px-[2.8rem] bg-blue border border-blue-600 hover:bg-blue-600 hover:text-white transition duration-300 ease-in-out"
+                style={
+                  btnColor == 3
+                    ? { backgroundColor: "blue", color: "white" }
+                    : null
+                }
+                onClick={() => {
+                  setbtnColor(3);
+                  //  console.log(btnColor.d);
+                }}
               >
                 Order Medicine
               </label>
@@ -261,6 +276,15 @@ const LocationCard = () => {
               <label
                 for="default-radio-1"
                 class="min-width: 8rem text-align: center line-height: 1.5 inline-block text-md font-medium text-gray-900 dark:text-gray-900 cursor-pointer rounded-full py-[0.5rem] px-4 bg-blue border border-blue-600 hover:bg-blue-600 hover:text-white transition duration-300 ease-in-out"
+                style={
+                  btnColor == 4
+                    ? { backgroundColor: "blue", color: "white" }
+                    : null
+                }
+                onClick={() => {
+                  setbtnColor(4);
+                  //  console.log(btnColor.d);
+                }}
               >
                 Doctor Consultancy
               </label>
@@ -284,7 +308,7 @@ const LocationCard = () => {
         </div>
 
         <div
-          className="w-[85%] md:text-[3.5vw] lg:text-[1.8vw] flex justify-center text-white text-center items-center p-2 bg-yellow-500 cursor-pointer rounded-2"
+          className="w-[75%] md:text-[3.5vw] lg:text-[1.8vw] flex justify-center text-white text-center items-center p-[0.1rem] bg-yellow-500 cursor-pointer rounded-2 mr-6"
           style={{ fontWeight: "bold" }}
           // onClick={handleFetchData}
           onClick={handleOpenPopup}

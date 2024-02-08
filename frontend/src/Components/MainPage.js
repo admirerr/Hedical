@@ -6,13 +6,13 @@ import { faDotCircle } from "@fortawesome/free-regular-svg-icons"; // Use the ap
 import { call } from "./icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Stations from "./Station";
-import gif from '../images/runningTrain.gif'
+import gif from "../images/runningTrain.gif";
 const MainPage = () => {
   return (
     <div>
       <NavbarComponent />
       <div className="flex flex-col-reverse lg:flex-row mt-[0%] mx-[5%] ">
-        <div className="mt-[5%] w-full lg:w-[45%] flex flex-col">
+        <div className="mt-[5%] w-full lg:w-[35%] flex flex-col">
           <LocationCard />
           {/* Emergeny call button */}
           <div
@@ -70,7 +70,6 @@ const MainPage = () => {
           </div>
         </div>
       </div>
-      
     </div>
   );
 };

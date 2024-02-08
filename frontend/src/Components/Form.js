@@ -2,18 +2,14 @@ import React from "react";
 import contact from "../images/ContactUs.png";
 const Form = () => {
   return (
-    <section className="flex px-4 flex-col md:flex-row" style={styles.contactSection}>
-      <div className="flex">
-        <img
-          src={contact}
-          width="70%"
-          height="70%"
-          padding="3rem"
-          alt=""
-        />
+    <section
+      className="flex px-4 flex-col md:flex-row"
+      style={styles.contactSection}
+    >
+      <div className="flex w-1/2">
+        <img src={contact} width="100%" height="100%" padding="3rem" alt="" />
       </div>
-      <div style={styles.contactContainer}>
-     
+      <div style={styles.contactContainer} className="w-1/2">
         <h2 style={styles.sectionTitle}>Get in Touch</h2>
         <p style={styles.sectionSubtitle}>
           Have any question or query? Get in touch with us.
